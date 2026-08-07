@@ -1,0 +1,16 @@
+# Rust
+target/
+Cargo.lock
+
+# Environment
+.env
+
+# MacOS
+.DS_Store
+
+# Logs and traces
+*.jsonl
+*.log
+
+# Docker volumes
+ollama_data/
