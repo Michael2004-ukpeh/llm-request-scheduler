@@ -20,7 +20,7 @@ pub struct AppState {
 }
 #[tokio::main]
 async fn main() {
-    dotenv().ok();
+    dotenvy::from_path("../.env").ok();
     let state = AppState {
         database_url: env::var("DATABASE_URL").expect("DATABASE_URL must be set"),
         kafka_brokers: env::var("KAFKA_BROKERS").expect("KAFKA_BROKERS must be set"),
